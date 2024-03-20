@@ -23,7 +23,27 @@ namespace Exercise10PM
                 //prompt for and get user choice
                 Console.WriteLine("Please enter 1, 2, 3, or 4");
                 choice = int.Parse(Console.ReadLine());
-                Console.WriteLine(choice);
+                //Console.WriteLine(choice);
+
+                if (choice == 1)
+                {
+                    Console.WriteLine("STARTING A NEW GAME");
+                }
+                else if (choice == 2)
+                {
+                    Console.WriteLine("Loading Recent Game...");
+                }
+                else if (choice == 3)
+                {
+                    Console.WriteLine("Opening your options but NOTHING");
+                }
+                else if (choice > 4 || choice < 1)
+                {
+                    Console.WriteLine("Not a valid choice");
+                }
+                Console.WriteLine();
+
+
             }
         }
     }
